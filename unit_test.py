@@ -1,4 +1,4 @@
-from util import sentences_in_ptb, sentences_in_a_ptb_file
+from lib.util import sentences_in_ptb, sentences_in_a_ptb_file
 
 
 

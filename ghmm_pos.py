@@ -1,7 +1,7 @@
 import numpy as np
 from hmmlearn.hmm import GaussianHMM
 import gensim
-from util import *
+from lib.util import *
 from sklearn.externals import joblib
 
 
@@ -29,3 +29,4 @@ print("started to train HMM")
 ghmm = GaussianHMM(n_components=100, covariance_type="diag", n_iter=1000).fit(X, X_lens)
 
 joblib.dump(ghmm, "out_model/ghmm.pkl")
+
