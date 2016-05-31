@@ -12,6 +12,7 @@ em_dim = len(word_embedding.values()[0])
 X = []
 X_lens = []
 S = []
+
 for s in sentences_in_ptb('data/wsj'):
     len_s = s.length
     cur_x = np.zeros((len_s, em_dim))
